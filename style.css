@@ -36,7 +36,7 @@ html {
 
 
 body {
-	background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), #262626), url(fundal1.png);
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), #262626), url(fundal1.png);
 	width: 100%;
 	height: 100em;
     background-size: cover;
@@ -52,7 +52,7 @@ body {
 
 .fundal2 {
 	padding: 2em;
-	margin: 2em;
+
 }
 
 .fit-image {
