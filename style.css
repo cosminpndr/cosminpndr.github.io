@@ -1,0 +1,201 @@
+html {
+	font-size: 1rem;
+  }
+  
+  @include media-breakpoint-up(sm) {
+	html {
+	  font-size: 1.2rem;
+	}
+  }
+  
+  @include media-breakpoint-up(md) {
+	html {
+	  font-size: 1.4rem;
+	}
+  }
+  
+  @include media-breakpoint-up(lg) {
+	html {
+	  font-size: 1.6rem;
+	}
+  }
+
+@media only screen and (max-width: 600px) {
+	.main-nav {
+		font-size: 0.5em;
+		padding: 0em;
+	}
+}
+
+@media only screen and (max-width: 976px) {
+	.fundal2 {
+		padding-top: 140px;
+	}
+}
+
+
+
+body {
+	background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), #262626), url(fundal1.png);
+	width: 100%;
+	height: 100em;
+    background-size: cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.fundal {
+	background-color: white;
+	padding: 2em;
+	margin: 2em;
+}
+
+.fundal2 {
+	padding: 2em;
+	margin: 2em;
+}
+
+.fit-image {
+width: 100%;
+object-fit: cover;
+}
+
+.bordura {
+	border-bottom: 1px solid #dfdfdf;
+	padding: 5px;
+	
+}
+
+.imagedropshadow {
+    padding: 5px;
+    border: solid 1px #EFEFEF;
+}
+a:hover img.imagedropshadow {
+    border: solid 1px #CCC;
+    -moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999;
+        box-shadow: 1px 1px 5px #999;
+}
+
+HTML CSSResult
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+
+.container3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.container__image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-image: url("assets/aboutme.png");
+  background-size: cover;
+  transition: ease-in-out .3s;
+  z-index: 2;
+}
+.container__image:before {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: inherit;
+  background-position: bottom;
+  filter: blur(40px) saturate(0%);
+  transform: scaleX(0.4);
+  transition: ease-in-out .4s;
+  border-radius: 120px;
+  transform-origin: right;
+  opacity: 0;
+  z-index: -1;
+}
+.container__image .container__info {
+  position: relative;
+  line-height: 1.8;
+  transition: ease-in-out .3s;
+  opacity: 0;
+}
+.container__image .container__location {
+  transition-delay: .15s;
+}
+.container__image:hover {
+  border-radius: 0;
+  width: 450px;
+  height: 450px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(9, 55, 53, 0.08), 0px 16px 24px rgba(9, 55, 53, 0.1), 0px 24px 32px rgba(9, 55, 53, 0.14);
+}
+.container__image:hover:before {
+  width: 100%;
+  opacity: 0.18;
+  filter: blur(10px) saturate(100%);
+  transform: scale(2.8) translate3d(-18%, 0px, 0px);
+}
+.container__image:hover .container__info {
+  transform: translate3d(-60%, 0px, 0px);
+  opacity: 1;
+}
+
+.link {
+  border-bottom: 1px solid transparent;
+  color: #FFA64D;
+  text-decoration: none;
+  transition: ease-in .13s;
+}
+.link:hover {
+  background-color: #06C0A8;
+  color: #ffffff;
+}
+
+
+#aboutmetext {
+	padding: 0;
+	margin: 0;
+	font-size: 2em;
+}
+
+#pandurucosmin {
+	padding: 0;
+	margin: 0;
+	font-size: 2em;
+}
+
+#myshop {
+    color: #FFA64D;
+}
+
+#myshop2 {
+	color: white;
+}
+
+#homeshop {
+	color: #FFA64D;
+}
+
+#workshop {
+	color: #FFA64D;
+}
+
+#aboutshop {
+	color: #FFA64D;
+}
+
+footer {
+	width: 100;
+	background-color: #262626;
+	padding: 60px 10px;
+}
