@@ -199,8 +199,3 @@ footer {
 	background-color: #262626;
 	padding: 60px 10px;
 }
-
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
